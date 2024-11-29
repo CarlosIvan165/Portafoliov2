@@ -1,0 +1,51 @@
+.a, .b{
+    background: $fondo_gradiante;
+}
+
+.a{
+    position: absolute;
+    width: 20%;
+    height: 30%;
+}
+
+.container-page{
+    z-index: 1;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    width: 97.5%;
+    height: 95%;
+    background: $fondo;
+    border: 1px $rain solid;
+}
+
+.b{
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 992px) { 
+    .a{
+        position: absolute;
+        width: 30%;
+        height: 40%;
+    }
+    
+    .container-page{
+        z-index: 1;
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        width: 95%;
+        height: 95%;
+    }
+    
+    .b{
+        position: absolute;
+        width: 30%;
+        height: 40%;
+    }
+}
