@@ -2,7 +2,7 @@
 
 // Fuentes
 $fuente_principal: 'Poppins', sans-serif;
-$fuente_skills: "Montserrat", sans-serif;
+$fuente_skills: "Bebas Neue", sans-serif;
 $fuente_name: 'Josefin Sans', sans-serif; 
 
 // Tamaño de Media Queries
@@ -13,14 +13,18 @@ $desktop: 1024px;
 // Colores
 $negro: #000000;
 $fondo: #293d3d;
+$fondo-gradiante_2:linear-gradient(0deg, rgba(29,43,43,1) 15%, rgba(41,61,61,1) 35%, rgba(41,61,61,1) 60%, rgba(29,43,43,1) 100%);
 $fondo_gradiante: linear-gradient(90deg, rgba(44,120,115,1) 0%, rgba(111,185,143,1) 50%, rgba(44,120,115,1) 100%);
 $blanco: #FFFFFF;
-$font-text:hsl(0, 0%, 84%);
+$font-text: #d6d6d6;
+$subtitulo: #627978;
 $blueblack: #021C1E;
 $cadetblue: #004445;
 $rain: #2C7873;
 $greenery: #6FB98F;
-
+$fondo-background: #4e5555;
+$box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+$box-gradiante: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
 
 $separacion: 5rem;
 

@@ -1,0 +1,51 @@
+.text{
+    font-weight: $delgada;
+    color: $font-text;
+    font-size: 1.8rem;
+}
+
+/* .group-card{
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+} */
+
+.group-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 90%;
+    margin: 0;
+}
+
+.card-skill{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    width: 90%;
+    padding: 20px 20px;
+    box-shadow: $box-shadow;
+    border-radius: 20px;
+}
+
+.img-card{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.title-card{
+    color: $font-text;
+    font-size: 2rem;
+}
+
+.text-card{
+    color: $font-text;
+    font-size: 1.4rem;
+}
+
+.logo-empresa{
+    width: 20rem !important
+}

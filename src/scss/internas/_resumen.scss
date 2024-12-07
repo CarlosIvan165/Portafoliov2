@@ -1,0 +1,117 @@
+
+
+.divisiones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.icon-box{
+    color: $greenery;
+}
+
+.timeline-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 30%;
+}
+
+.timeline-wrapper2{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+}
+
+.timeline-list{
+    font-size: 15px;
+}
+
+.timeline-list span{
+    color: $greenery;
+    font-weight: $regular;
+    line-height: 1.6;
+}
+
+.timeline-list h4{
+    font-size: 1.7rem;
+}
+
+.timeline-list p{
+    font-size: 1.5rem;
+    color: $font-text;
+}
+
+.timeline-list .text-xp{
+    font-size: 1.2rem;
+    color: $font-text !important;
+}
+
+.timeline-item{
+    display: grid;
+    justify-items: start;
+    position: relative;
+    color: $font-text;
+    text-align: left;
+}
+
+.timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -25px;
+    left: -15px;
+    width: 2px;
+    height: calc(100% + 40px);
+    background: $fondo-background;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -18px;
+    height: 9px;
+    width: 9px;
+    background: $rain;
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+}
+
+.text-decoration{
+    display: list-item;
+    text-align: left;
+    list-style: disc;
+    color: $greenery;
+}
+
+.skills-icon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-icon h2{
+    text-align: left;
+    color: $font-text;
+    font-size: 1.5rem;
+}
+
+.container-languages{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.languages{
+    color: $greenery;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languages .text-xp{
+    color: $font-text;
+    font-size: 1.5rem;
+}

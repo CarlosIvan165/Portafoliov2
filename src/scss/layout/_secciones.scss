@@ -1,0 +1,21 @@
+.subtitle{
+    color: $font-text;
+    font-size: 3.5rem;
+    font-weight: $regular;
+    font-family: $fuente_skills;
+}
+
+.barra{
+    content: "";
+    position: relative;
+    width: 90px;
+    height: 7px;
+    background: $fondo_gradiante;
+    border-radius: 3px;
+}
+
+.informacion{
+    display: grid;
+    align-items: center;
+    justify-items: start;
+}

@@ -1,24 +1,27 @@
 .logo{
-    width: 8%;
-    height: 25%;
+    width: 90%;
+    height: 30%;
     display: flex;
-    justify-content: center;
     align-items: center;
     background: $blueblack;
 }
 
 .menu{
-    width: 8%;
-    height: 75%;
+    width: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background: $blueblack;
+    overflow: hidden;
 }
 
 .container-navbar{
     display: flex;
+}
+
+.navbar-item{
+    width: 100%;
 }
 
 .navbar-list{
@@ -27,13 +30,14 @@
 
 .navbar-link{
     width: 100%;
-    padding: 20px 7px;
+    padding: 20px 20px;
     font-family: $fuente_principal;
     font-weight: $delgada;
     color: $font-text;
 }
 
 .active{
+    display: block;
     background: $fondo;
 }
 
@@ -55,32 +59,42 @@
     color: $greenery;
 }
 
-.menu-phone{
-    height: 100%;
+.social-link:hover{
+    color: $font-text;
 }
 
 @media (max-width: 1200px) { 
-    .social-list{
+    img{
+        width: 30%;
+    }
+
+    .imagen-nombre{
         display: none;
     }
 
-    .logo{
-        width: 25%;
-        height: 10%;
-        display: flex;
-        background: $blueblack;
+    .social-list{
+        display: none;
     }
     
+    .logo{
+        display: none;   
+    }
+
     .menu{
-        width: 75%;
-        height: 10%;
+        width: 100%;
+        height: 25%;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        justify-content: center;
         background: $blueblack;
     }
     
     .menu-phone{
         display: flex;
+    }
+
+    .navbar-item{
+        height: 100%;
     }
 
     .navbar-list{
@@ -89,10 +103,28 @@
 
     .navbar-link{
         width: 100%;
-        padding: 15px 7px;
+        padding: 26px 7px;
         font-family: $fuente_principal;
         font-weight: $delgada;
         color: $font-text;
     }
     
+    .navbar-link.active{
+        color: $greenery;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) { 
+    .menu{
+        justify-content: center;
+    }
+
+    .navbar-link{
+        width: 100%;
+        padding: 38px 9px;
+        font-family: $fuente_principal;
+        font-weight: $delgada;
+        color: $font-text;
+    }
 }
