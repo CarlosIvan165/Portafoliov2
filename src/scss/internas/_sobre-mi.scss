@@ -22,7 +22,7 @@
 
 .card-skill{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     width: 90%;
     padding: 20px 20px;
@@ -48,4 +48,33 @@
 
 .logo-empresa{
     width: 20rem !important
+}
+
+@media (max-width: 1280px){
+    .text{
+        text-align: left;
+    }
+    .informacion{
+        padding: 20px;
+        align-items: center;
+    }
+    
+    .text{
+        text-align: center;
+    }
+
+    .card-skill{
+        width: 95%;
+    }
+
+    .img-card{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 950px){
+    .subtitle{
+        font-size: 3rem;
+    }
 }

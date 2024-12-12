@@ -12,18 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/portafolio/build/css/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
     <body>
         <div class="container-box">
             <div class="a"></div>
 
             <div class="container-page">
-                <div class="menu-phone">
-                    <div class="menu">
-                        <div class="logo">
-                                <img src="../portafolio/build/img/Carlos Perez.png" class="imagen-nombre" alt="Logo Nombre">
-                        </div>
-                        <div class="container-navbar">
+                <div class="menu">
+                    <div class="logo">
+                            <img src="../portafolio/build/img/Carlos Perez.png" class="imagen-nombre" alt="Logo Nombre">
+                    </div>
+                    <div class="container-navbar">
                             <nav class="navbar">
                                 <ul class="navbar-list">
                                     <li class="navbar-item">
@@ -57,21 +57,59 @@
                                     </li>
                                 </ul>
                             </nav>
-                        </div>
+                    </div>
+                </div>
+                <div class="menu-phone">
+                    <div class="logo">
+                            <img src="../portafolio/build/img/Carlos Perez.png" class="imagen-nombre" alt="Logo Nombre">
+                    </div>
+                    <div class="container-navbar">
+                            <nav class="navbar">
+                                <ul class="navbar-list">
+                                    <li class="navbar-item">
+                                        <button class="navbar-link active" data-nav-link>Inicio</button>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <button class="navbar-link" data-nav-link>Sobre mi</button>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <button class="navbar-link" data-nav-link>Resumen</button>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <button class="navbar-link" data-nav-link>Portafolio</button>
+                                    </li>
+                                </ul>
+                                <ul class="social-list">
+                                    <li class="social-item">
+                                        <a href="" class="social-link">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="" class="social-link">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                     </div>
                 </div>
                 <div class="container-pages">
                     <article class="inicio" data-page="inicio">
                         <div class="page-inicio">
                             <p class="title">HOLA</p>
-                            <p class="title">ESTE ES UN MENSAJE</p>
-                            <p class="title">DE PRUEBA PARA UN TRABAJO EXTRA</p>
+                            <p class="title">Mi NOMBRE ES CARLOS IVAN PEREZ</p>
                             <p class="titulo">// Web Developer
                             </p> 
                         </div>
                     </article>
                     
-                    <article class="sobre-mi" data-page="sobre mi">
+                    <article class="sobre-mi active" data-page="sobre mi">
                         <section class="informacion">
                             <h2 class="subtitle">Sobre Mi</h2>
                             <span class="barra"></span>
@@ -264,9 +302,11 @@
                                         </div>
                                         <div>
                                             <h2>Sistemas De Gestion De Contenidos</h2>
-                                            <div class="languages">
-                                                <i class="fa-brands fa-wordpress fa-2xl"></i>
-                                                <P class="text-xp">WordPress</P>
+                                            <div class="container-languages">
+                                                <div class="languages">
+                                                    <i class="fa-brands fa-wordpress fa-2xl"></i>
+                                                    <P class="text-xp">WordPress</P>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -275,10 +315,52 @@
                         </section>
                     </article>
 
-                    <article class="portafolio active" data-page="portafolio">
+                    <article class="portafolio" data-page="portafolio">
                         <section class="informacion">
                             <h2 class="subtitle">Mis Trabajos</h2>
                             <span class="barra"></span>
+
+                            <div class="container-work">
+                                <!-- 1 -->
+                                <div class="container-work__item">
+                                    <a href="https://carlosivan165.github.io/FrontEndStore.io/">
+                                        <img class="work-item" src="../portafolio/build/img/store.png" alt="Imagen Proyecto">
+                                        <div class="container-item__text">
+                                            <span>Curso Udemy</span>
+                                            <p>FrontEnd Store</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="container-work__item">
+                                    <a href="https://carlosivan165.github.io/BlogDeCafe.io/">
+                                        <img class="work-item" src="../portafolio/build/img/cafe.png" alt="Imagen Proyecto">
+                                        <div class="container-item__text">
+                                            <span>Curso Udemy</span>
+                                            <p>Blog De Cafe</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="container-work__item">
+                                    <a href="https://carlosivan165.github.io/FestivalDeMusica/">
+                                        <img class="work-item" src="../portafolio/build/img/festival.png" alt="Imagen Proyecto">
+                                        <div class="container-item__text">
+                                            <span>Curso Udemy</span>
+                                            <p>Rock & EDM festival</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="container-work__item">
+                                    <a href="https://carlosivan165.github.io/Mi-Portafolio/">
+                                        <img class="work-item" src="../portafolio/build/img/primer-portafolio.png" alt="Imagen Proyecto">
+                                        <div class="container-item__text">
+                                            <span>Proyecto Personal</span>
+                                            <p>Mi Primer Portafolio</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </section>
                     </article>
                 </div>
@@ -290,5 +372,6 @@
         <p class="copyright">Todos los derechos Reservados 2024 &copy;</p>
     </footer>
     <script src="../portafolio/build/js/bundle.min.js"></script>
+    <script src="/build/js/bundle.min.js"></script>
 </body>
 </html>

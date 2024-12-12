@@ -24,17 +24,22 @@
     color: $subtitulo;
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1280px){ 
     .page-inicio{
         justify-content: center;
         height: 50%;
     }
+
+    .title{
+        font-size: 7rem;
+        line-height: 100px;
+    }
 }
 
 @media (max-width: 950px) { 
-    .nombre{
-        font-size: 4rem;
-        line-height: 50px;
+    .title{
+        font-size: 6rem;
+        line-height: 100px;
     }
 
     .page-inicio{
@@ -44,9 +49,27 @@
     }
 }
 
-@media (max-width: 400px) { 
-    .nombre{
-        font-size: 3.2rem;
+@media (max-width: 769px) { 
+    .title{
+        font-size: 5rem;
+        line-height: 100px;
+    }
+}
+
+@media (max-width: 657px) { 
+    .title{
+        font-size: 4rem;
+        line-height: 80px;
+    }
+}
+
+@media (max-width: 481px) { 
+    .title{
+        font-size: 3rem;
         line-height: 50px;
+    }
+
+    .inicio{
+        width: 80%;
     }
 }

@@ -27,26 +27,21 @@
     background: $fondo;
     border: 1px $rain solid;
     display: grid;
-    grid-template-columns: 1fr 8fr;
-    overflow-y: hidden;
-}
-
-.container-pages{
-    overflow-y: scroll;
+    grid-template-columns: 1fr 9fr;
 }
 
 .container-pages::-webkit-scrollbar {
     width: 10px;
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1280px){ 
     .container-page{
         grid-template-columns: 1fr;
     }
 }
 
 
-@media (max-width: 992px) { 
+@media (max-width: 950px) { 
     .a{
         position: absolute;
         width: 30%;
