@@ -1,7 +1,8 @@
 
 
 .divisiones{
-    display: grid;
+    display: grid; 
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
 }
@@ -114,4 +115,21 @@
 .languages .text-xp{
     color: $font-text;
     font-size: 1.5rem;
+}
+
+@media (max-width: 769px){
+    .divisiones{
+        grid-template-columns: 1fr;
+    }
+
+    .skills-icon{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 481px){
+    .skills-icon{
+        grid-template-columns: 1fr;
+    }
 }

@@ -7,6 +7,7 @@
 }
 
 .menu{
+    z-index: 1;
     width: 90%;
     height: 100%;
     display: flex;
@@ -44,7 +45,7 @@
     background: $fondo;
 }
 
-.navbar-link .active{
+.navbar-link.active{
     color: $greenery;
 }
 
@@ -83,13 +84,14 @@
         display: none;   
     }
 
-    .menu{
+    /* .menu{
         display: none;
-    }
+    } */
     
-    .menu-phone{
+    .menu{
+        display: block;
         width: 100%;
-        height: 80px;
+        height: 70px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -115,22 +117,22 @@
     
     .navbar-link.active{
         color: $greenery;
-        height: auto;
     }
 
     .container-navbar{
-        
+        align-items: center;
     }
 }
 
 @media (max-width: 481px) { 
     .menu{
         justify-content: center;
+        height: 49px;
     }
 
     .navbar-link{
         width: 100%;
-        padding: 38px 9px;
+        padding: 17px 9px;
         font-family: $fuente_principal;
         font-weight: $delgada;
         color: $font-text;

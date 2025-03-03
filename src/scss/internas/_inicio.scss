@@ -27,7 +27,7 @@
 @media (max-width: 1280px){ 
     .page-inicio{
         justify-content: center;
-        height: 50%;
+        height: 75%;
     }
 
     .title{
@@ -39,13 +39,6 @@
 @media (max-width: 950px) { 
     .title{
         font-size: 6rem;
-        line-height: 100px;
-    }
-
-    .page-inicio{
-        justify-content: center;
-        height: 50%;
-        width: 100%;
     }
 }
 
