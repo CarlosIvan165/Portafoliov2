@@ -86,6 +86,10 @@
 }
 
 @media (max-width: 481px){
+    .sobre-mi{
+        width: 100%;
+    }
+
     .card-skill{
         grid-template-columns: 1fr;
         justify-items: start;

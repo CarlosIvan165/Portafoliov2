@@ -30,6 +30,10 @@
 }
 
 @media (max-width: 481px){
+    .portafolio{
+        width: 100%;
+    }
+
     .container-work{
         grid-template-columns: 1fr;
     }

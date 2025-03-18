@@ -13,11 +13,14 @@
 
 .timeline-wrapper{
     display: grid;
+    gap: 1rem;
+    margin-left: 1.5rem;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
     width: 30%;
 }
+
 
 .timeline-wrapper2{
     display: grid;
@@ -129,6 +132,10 @@
 }
 
 @media (max-width: 481px){
+    .resumen{
+        width: 100%;
+    }
+
     .skills-icon{
         grid-template-columns: 1fr;
     }
