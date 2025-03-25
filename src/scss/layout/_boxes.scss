@@ -25,6 +25,7 @@
     width: 97.5%;
     height: 95%;
     background: $fondo;
+    border-radius: 10px;
     border: 1px $rain solid;
     display: grid;
     grid-template-columns: 1fr 9fr;
@@ -37,6 +38,7 @@
 .container-pages{
     padding-bottom: 1rem;
     overflow-y: auto;
+    border-radius: 10px;
 }
 
 @media (max-width: 1280px){ 

@@ -17,3 +17,25 @@ for (let i = 0; i < navigationLinks.length; i++) {
         }
     });
 }
+
+// Obtener elementos
+const modal = document.getElementById("myModal");
+const openModal = document.getElementById("openModal");
+const closeModal = document.querySelector(".close");
+
+// Evento para abrir la modal
+openModal.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+
+// Evento para cerrar la modal
+closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Cerrar al hacer clic fuera de la modal
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});

@@ -61,7 +61,7 @@
                 </div>
                 
                 <div class="container-pages">
-                    <article class="inicio active" data-page="inicio">
+                    <article class="inicio" data-page="inicio">
                         <div class="page-inicio">
                             <p class="title">HOLA Mi NOMBRE ES</p>
                             <p class="title">CARLOS IVAN PEREZ BENITEZ</p>
@@ -121,12 +121,12 @@
                                 </li>
                             </ul>
 
-                            <h2 class="subtitle">Trabaje para:</h2>
+                            <h2 class="subtitle">Trabajé para:</h2>
                             <img class="logo-empresa" src="build/img/logo-ilo.jpg" alt="">
                         </section>
                     </article>    
 
-                    <article class="resumen" data-page="resumen">
+                    <article class="resumen active" data-page="resumen">
                         <section class="informacion">
                             <h2 class="subtitle">Resumen</h2>
                             <span class="barra"></span>
@@ -208,11 +208,56 @@
                                                     <p>Colaborar con diseñadores para crear imágenes y fotografías promocionales.</p>
                                                 </li>
                                             </ul>    
-                                            <p class="text-xp">
+                                            <!-- <p class="text-xp">
                                                 Gestione la integración de OpenPay, incluyendo API, tokenización de tarjetas y 3D Secure, 
                                                 optimizando el flujo de pagos en frontend y backend. Desarrollo y administro páginas web con JavaScript, 
                                                 PHP, CSS y WordPress, asegurando una gestión eficiente de datos de usuario y transacciones.
-                                            </p>
+                                            </p> -->
+                                            <button id="openModal" class="botton-xp">Mas informacion</button>
+
+                                            <div id="myModal" class="modal" style="display: none;">
+                                                <div class="modal-content">
+                                                    <span class="close">&times;</span>
+                                                    <h2>Ilò living - Webmaster</h2>
+                                                    <div class="container-navbar2">
+                                                        <nav>
+                                                            <ul>
+                                                                <li><button>Visualizador</button></li>
+                                                                <li><button>Openpay</button></li>                                                                
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                    <div class="container-pages2">
+                                                        <article class="visualizador active">
+                                                            <h4>Visualizador Dinamico</h4>
+                                                            <p>Este visualizador fue implementado en la página para mostrar al cliente, de manera más efectiva, cómo se verían sus productos con los colores de su elección.</p>
+                                                            <div class="container-visual">
+                                                                <div class="container-image">
+                                                                    <img class="gif-visualizador" src="src/img/visualizador-edredon.gif" alt="imagen de visualizador">
+                                                                </div>
+                                                                <div class="container-text_visual">                                                                    
+                                                                    <span>Funcion del visualizador</span>
+                                                                    <p class="sep">El visualizador dinámico adapta la apariencia en tiempo real según las selecciones realizadas a través de los swatches correspondientes. En este caso, 
+                                                                        la tela incorpora un diseño específico denominado capitonado.</p>
+                                                                    <p class="sep">La Vista 1 y la Vista 2 cuentan con sus propias telas y opciones de color, permitiendo al usuario seleccionar la que prefiera.</p>
+                                                                    <p class="sep">Al realizar una selección, se genera una ruta específica que el visualizador utiliza para mostrar las imágenes, siguiendo la estructura: "capitonado/ + tela/ + color".</p>                                                                        
+                                                                </div>
+                                                                <div>
+                                                                    <img class="gif-visualizador" src="src/img/configurador-edredon.gif" alt="imagen de configurador">
+                                                                </div>
+                                                                <div class="container-text_visual">
+                                                                    <span>¿Qué más se hace con los datos obtenidos?</span>
+                                                                    <p>Los datos obtenidos tambien se usan para poderle mostrar al usuario su seleccion de tela y color en un recuadro de configuracion, aqui tambien se muestra el precio del producto</p>
+                                                                    <p>Este visualizador se implementó en dos secciones de la página: Edredones y Colchas. Inicialmente, se planeaba extenderlo a todas las categorías de línea blanca, pero por razones externas, no se llevó a cabo.</p>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        <article data-page="openpay">
+                                                            <p>hola mundo 2</p>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ol>
                                 </div>
